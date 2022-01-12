@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:states_rebuilder/states_rebuilder.dart';
 
 part 'animator_key.dart';
