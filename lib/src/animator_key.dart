@@ -77,8 +77,8 @@ class AnimatorKeyImp<T> implements AnimatorKey<T> {
       Curve? curve,
       int? repeats,
       int? cycles}) {
-    _animatorState
-      ?..resetAnimation(
+    _animatorState!
+      ..resetAnimation(
         tween: tween,
         tweenMap: tweenMap,
         duration: duration,
@@ -91,7 +91,7 @@ class AnimatorKeyImp<T> implements AnimatorKey<T> {
 
   @override
   void triggerAnimation({bool restart = false}) {
-    _animatorState?.triggerAnimation(restart: restart);
+    _animatorState!.triggerAnimation(restart: restart);
   }
 
   @override
